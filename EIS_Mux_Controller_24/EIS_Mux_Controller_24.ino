@@ -36,6 +36,10 @@ void loop() {
     
     if (channel == startPin + outputs) {
       channel = startPin; // reset after going through all channels
+      digitalWrite(channel, HIGH); //flash channel to indicate reset 
+      delay(200);
+      digitalWrite(channel, LOW);
+      delay(200);  
     }
   }
 
