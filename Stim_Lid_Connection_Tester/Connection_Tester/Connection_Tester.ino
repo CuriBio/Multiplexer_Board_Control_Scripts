@@ -66,6 +66,7 @@ void loop() {
     for (int i = 0; i < 2 * WELL_NUMBER; i++) {
       // Serial.println(ideals[i]);
       // Serial.println(connections[i]);
+
       if (!ideals[i].equals(connections[i])){
         same = false; 
         Serial.print(connections[i]);
@@ -74,10 +75,13 @@ void loop() {
         } else {
           Serial.print(" are shorted");
         }
-        Serial.println();
+      } else {
+        Serial.print(ideals[i] + " are connected");        
       }
+      Serial.println();
     }
     if (same) {
+      Serial.println()
       Serial.println("Connections Good");
     } 
   }
