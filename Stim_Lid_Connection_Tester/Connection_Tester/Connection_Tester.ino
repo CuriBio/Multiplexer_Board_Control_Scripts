@@ -3,7 +3,7 @@ int WELL_NUMBER = 24;
 int STARTING_PIN = 2;
 
 String rows[] = {"A", "B", "C", "D"};
-String cols[] = {"1", "2", "3", "4", "5", "6"};
+String cols[] = {"6", "5", "4", "3", "2", "1"};
 String pol[] = {"+", "-"};
 
 void setup() {
